@@ -1,53 +1,54 @@
+'use strict';
 window.addEventListener('DOMContentLoaded', function () {
     window.addEventListener('scroll', function () {
         const header = document.querySelector('header');
-        header.classList.toggle('sticky', window.scrollY > 0)
-    })
+        header.classList.toggle('sticky', window.scrollY > 0);
+    });
 
-    const menuBtn = document.querySelector('.menu-btn')
-    const navigation = document.querySelector('.navigation')
-    const navigationItems = document.querySelectorAll('.navigation a')
+    const menuBtn = document.querySelector('.menu-btn'),
+        navigation = document.querySelector('.navigation'),
+        navigationItems = document.querySelectorAll('.navigation a');
 
 
     menuBtn.addEventListener('click', () => {
-        menuBtn.classList.toggle('active')
-        navigation.classList.toggle('active')
-    })
+        menuBtn.classList.toggle('active');
+        navigation.classList.toggle('active');
+    });
 
     navigationItems.forEach(navItem => {
         navItem.addEventListener('click', () => {
-            menuBtn.classList.remove('active')
-            navigation.classList.remove('active')
-        })
-    })
+            menuBtn.classList.remove('active');
+            navigation.classList.remove('active');
+        });
+    });
 
-    const scrollBtn = document.querySelector('.scrollToTop-btn')
+    const scrollBtn = document.querySelector('.scrollToTop-btn');
     window.addEventListener('scroll', () => {
-        scrollBtn.classList.toggle('active', window.scrollY > 500)
-    })
+        scrollBtn.classList.toggle('active', window.scrollY > 500);
+    });
     scrollBtn.addEventListener('click', () => {
         document.body.scrollTop = 0;
         document.documentElement.scrollTop = 0;
-    })
+    });
 
     window.addEventListener('scroll', () => {
-        let reveals = document.querySelectorAll('.reveal')
+        let reveals = document.querySelectorAll('.reveal');
         for (let i = 0; i < reveals.length; i++) {
             let windowHeight = window.innerHeight;
             let revealTop = reveals[i].getBoundingClientRect().top;
             let revealPoint = 50;
 
             if (revealTop < windowHeight - revealPoint) {
-                reveals[i].classList.add('active')
+                reveals[i].classList.add('active');
             }
         }
-    })
+    });
 });
 
 
 let dushaev = document.querySelector('.brand'),
     inputClass = document.querySelector('.input-class'),
-    contactMessage = document.querySelector('.contact-message')
+    contactMessage = document.querySelector('.contact-message');
 
 dushaev.addEventListener('mouseenter', function () {
     if(this.innerHTML === 'Dushaev'){
@@ -56,11 +57,11 @@ dushaev.addEventListener('mouseenter', function () {
     else if(this.innerHTML === 'Bakhtiyor') {
         this.innerHTML = 'Dushaev';
     }
-    else(this.innerHTML = 'Dushaev') 
+    else(this.innerHTML = 'Dushaev'); 
 });
 
 inputClass.addEventListener('input', function () {
-    contactMessage.value = `My name is ${inputClass.value} and i want:`
+    contactMessage.value = `My name is ${inputClass.value} and i want:`;
 });
 
 
@@ -88,7 +89,7 @@ function clock() {
 
 clock();
 
-let aboutMe = document.querySelector('.section-title')
+let aboutMe = document.querySelector('.section-title');
 
 aboutMe.addEventListener('mouseenter', function () {
     if (this.innerHTML === 'About Me') {
@@ -99,7 +100,7 @@ aboutMe.addEventListener('mouseenter', function () {
     }
 });
 
-let fotos = document.querySelector('.myPhotos')
+let fotos = document.querySelector('.myPhotos');
 
 fotos.addEventListener('mouseenter', function () {
     if (this.innerHTML === 'My photos') {
@@ -110,7 +111,7 @@ fotos.addEventListener('mouseenter', function () {
     }
 });
 
-let skills = document.querySelector('.skills-title')
+let skills = document.querySelector('.skills-title');
 
 skills.addEventListener('mouseenter', function () {
     if (this.innerHTML === 'My skills') {
@@ -119,9 +120,9 @@ skills.addEventListener('mouseenter', function () {
     else if (this.innerHTML === "That's not all") {
         this.innerHTML = 'My skills';
     }
-})
+});
 
-let services = document.querySelector('.services-title')
+let services = document.querySelector('.services-title');
 
 services.addEventListener('mouseenter', function () {
     if (this.innerHTML === 'My Services') {
@@ -130,9 +131,9 @@ services.addEventListener('mouseenter', function () {
     else if (this.innerHTML === "That's not all") {
         this.innerHTML = 'My Services';
     }
-})
+});
 
-let work = document.querySelector('.work-title')
+let work = document.querySelector('.work-title');
 
 work.addEventListener('mouseenter', function () {
     if (this.innerHTML === 'My Work') {
@@ -141,9 +142,9 @@ work.addEventListener('mouseenter', function () {
     else if (this.innerHTML === "That's not all") {
         this.innerHTML = 'My Work';
     }
-})
+});
 
-let contact = document.querySelector('.contact-title')
+let contact = document.querySelector('.contact-title');
 
 contact.addEventListener('mouseenter', function () {
     if (this.innerHTML === 'Contact Me') {
@@ -152,7 +153,7 @@ contact.addEventListener('mouseenter', function () {
     else if (this.innerHTML === "I'm waiting") {
         this.innerHTML = 'Contact Me';
     }
-})
+});
 
 let photos = document.querySelectorAll('.items');
 
@@ -161,61 +162,16 @@ function slideAnimate(active) {
 
     photos.forEach((items) => {
         items.addEventListener('mouseenter', () => {
-            clearActive()
+            clearActive();
             items.classList.add('active');
-        })
-    })
+        });
+    });
 }
 
 function clearActive() {
     photos.forEach((item) => item.classList.remove('active'));
 }
-slideAnimate(0)
-
-
-
-
-
-
-
-
-
-// for (let i = 0; i < photos.length; i++) {
-//     photos[i].addEventListener('mouseleave', function() {
-//         photos[i].classList.remove('active')
-//     })
-// }
-
-// for (let i = 0; i < photos.length; i++) {
-//     photos[i].addEventListener('mouseenter', function() {
-//         photos[i].classList.add('active')
-//     })
-// }
-// for (let i = 0; i < photos.length; i++) {
-//     photos[i].addEventListener('mouseleave', function() {
-//         photos[i].classList.remove('active')
-//     })
-// }
-
-
-// let photos = document.querySelectorAll('.chehochu__box-imgOne');
-
-// for (let i = 0; i < photos.length; i++) {
-//     photos[i].addEventListener('mouseenter', function () {
-//         photos[i].style.cssText = `width: 400px;`;
-//         photos[i].style.zIndex = '999';
-//         photos[i].style.height = '320px';
-//     })
-// }
-// for (let i = 0; i < photos.length; i++) {
-//     photos[i].addEventListener('mouseleave', function () {
-//         photos[i].style.cssText = `width: 230px;`;
-//         photos[i].style.zIndex = '888';
-//         photos[i].style.height = '210px';
-//     })
-// }
-
-
+slideAnimate(0);
 
 
 // let i = 0;
