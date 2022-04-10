@@ -1287,17 +1287,22 @@ canvas {
         min-height: 300px;
     }
 
+    .about__column-img_card-img {
+        margin-bottom: 20px;
+    }
+
     .about__column-select {
         position: absolute;
         top: 200px;
         left: 90px;
-        max-width: 40%;
+        max-width: 45%;
         width: 100%;
         padding: 0;
+        height: 30%;
     }
 
     .about__column-select_text {
-        font-size: 10px;
+        font-size: 10px;        
     }
 
     .about__column-select_namePhoto {
