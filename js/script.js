@@ -171,23 +171,23 @@ contact.addEventListener('mouseenter', function () {
     }
 });
 
-let photos = document.querySelectorAll('.items');
+// let photos = document.querySelectorAll('.items');
 
-function slideAnimate(active) {
-    photos[active].classList.add('active');
+// function slideAnimate(active) {
+//     photos[active].classList.add('active');
 
-    photos.forEach((items) => {
-        items.addEventListener('mouseenter', () => {
-            clearActive();
-            items.classList.add('active');
-        });
-    });
-}
+//     photos.forEach((items) => {
+//         items.addEventListener('mouseenter', () => {
+//             clearActive();
+//             items.classList.add('active');
+//         });
+//     });
+// }
 
-function clearActive() {
-    photos.forEach((item) => item.classList.remove('active'));
-}
-slideAnimate(0);
+// function clearActive() {
+//     photos.forEach((item) => item.classList.remove('active'));
+// }
+// slideAnimate(0);
 
 
 // let i = 0;
