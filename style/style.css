@@ -1018,7 +1018,7 @@ canvas {
         max-width: 50%;
         width: 100%;
         border-radius: 6px;
-        margin-top: -90px;
+        margin-top: -20px;
     }
 
     .skills .content {
@@ -1043,7 +1043,7 @@ canvas {
 @media (max-width: 992px) {
 
     .about__column-select {
-        margin-top: -90px;
+        margin-top: -10px;
     }
 
 }
@@ -1051,7 +1051,7 @@ canvas {
 @media (max-width: 768px) {
 
     .about__column-select {
-        margin-top: -130px;
+        margin-top: -40px;
         max-width: 55%;
         width: 100%;
     }
@@ -1061,21 +1061,34 @@ canvas {
 @media (max-width: 700px) {
 
     .about__column-select {
-        margin-top: -190px;
+        margin-top: -110px;
         max-width: 55%;
         width: 100%;
     }
-
+}
+@media (max-width: 670px) {
+    .about__column-select {
+        margin-top: -140px;
+        max-width: 55%;
+        width: 100%;
+    }
 }
 
 @media (max-width: 650px) {
 
     .about__column-select {
-        margin-top: -250px;
+        margin-top: -160px;
         max-width: 65%;
         width: 100%;
     }
+}
+@media (max-width: 600px) {
 
+    .about__column-select {
+        margin-top: -210px;
+        max-width: 65%;
+        width: 100%;
+    }
 }
 
 @media (max-width: 576px) {
@@ -1096,7 +1109,7 @@ canvas {
         max-width: 50%;
         width: 100%;
         height: 17%;
-        margin-top: -200px;
+        margin-top: -163px;
     }
 
     .about__column-select_namePhoto {
@@ -1217,7 +1230,7 @@ canvas {
         max-width: 50%;
         width: 100%;
         height: 17%;
-        margin-top: -185px;
+        margin-top: -160px;
     }
 }
 
@@ -1283,7 +1296,7 @@ canvas {
         max-width: 60%;
         width: 100%;
         height: 17%;
-        margin-top: -185px;
+        margin-top: -160px;
     }
 
 }
@@ -1317,7 +1330,7 @@ canvas {
     }
 
     .about__column-select {
-        margin-top: -80px;
+        margin-top: -30px;
         max-width: 45%;
         width: 100%;
         padding: 0;
