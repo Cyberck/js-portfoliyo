@@ -20,7 +20,7 @@ window.addEventListener('DOMContentLoaded', () => {
     hideTabsImgContent();
     showTabsImgContent();
 
-    tabsNameParent.addEventListener('touchenter', (e) => {
+    tabsNameParent.addEventListener('touchstart', (e) => {        
         e.preventDefault();
         const target = e.target;
 
