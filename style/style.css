@@ -21,6 +21,29 @@ a {
     text-decoration: none;
 }
 
+.show {
+    display: block;
+}
+
+.hide {
+    display: none;
+}
+
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade {
+    from {
+        opacity: 0.1;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
 .audio {
     margin-top: 60px;
     position: relative;
@@ -293,6 +316,15 @@ canvas {
     cursor: pointer;
 }
 
+.blue {
+    position: relative;
+    color: crimson;
+    font-size: 38px;
+    font-weight: 800;
+    margin-bottom: 60px;
+    cursor: pointer;
+}
+
 .section-title::before {
     content: '';
     display: block;
@@ -325,7 +357,7 @@ canvas {
     padding-right: 100px;
 }
 
-.about .content {
+.about__column {
     position: relative;
     width: 100%;
     display: flex;
@@ -333,24 +365,62 @@ canvas {
     margin-top: 20px;
 }
 
-.about .content .col-left {
+.about__column-left {
+    display: flex;
     position: relative;
     width: 45%;
 }
 
-.about .content .col-right {
+.about__column-right {
+    display: flex;
+    flex-direction: column;
     position: relative;
     width: 45%;
 }
 
-.about .content .img-card {
+.about__column-select {
+    margin-top: 20px;
+}
+
+.about__column-select_text {
+    color: crimson;
+    font-size: 17px;
+    font-weight: 600;
+    display: inline-block;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border-radius: 2px;
+    margin: 7px 0;
+    transition: .5s ease;
+    position: relative;
+    z-index: 333;
+}
+
+.about__column-select_namePhoto {
+    font-size: 18px;
+    line-height: 20px;
+    font-weight: 400;
+    color: crimson;
+    margin-top: 3px;
+    margin-bottom: 3px;
+    transition: all 500ms ease;
+}
+
+.about__column-select_namePhoto:hover {
+    transform: translate(5px);
+    color: #0072ff;
+    font-size: 20px;
+}
+
+.about__column-img_card {
     position: relative;
     width: 100%;
     min-height: 600px;
     height: 100%;
 }
 
-.about .content .img-card img {
+.about__column-img_card-img {
     position: absolute;
     top: 0;
     left: 0;
@@ -360,7 +430,7 @@ canvas {
     border-radius: 10px;
 }
 
-.about__content-title {
+.about__column-title {
     font-size: 36px;
     font-weight: 800;
     margin-bottom: 20px;

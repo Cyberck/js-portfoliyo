@@ -51,13 +51,13 @@ let dushaev = document.querySelector('.brand'),
     contactMessage = document.querySelector('.contact-message');
 
 dushaev.addEventListener('mouseenter', function () {
-    if(this.innerHTML === 'Dushaev'){
+    if (this.innerHTML === 'Dushaev') {
         this.innerHTML = 'Bakhtiyor';
     }
-    else if(this.innerHTML === 'Bakhtiyor') {
+    else if (this.innerHTML === 'Bakhtiyor') {
         this.innerHTML = 'Dushaev';
     }
-    else(this.innerHTML = 'Dushaev'); 
+    else (this.innerHTML = 'Dushaev');
 });
 
 inputClass.addEventListener('input', function () {
@@ -89,69 +89,85 @@ function clock() {
 
 clock();
 
+// let aboutMe = document.querySelector('.section-title');
+// const div = document.createElement('div');
+//     div.classList.add('blue');
+    
+// let i = 0;
+// const deleteElement = (e) => {
+
+//     aboutMe.replaceWith(div);
+//     div.textContent =  `${prompt('Kakoy film dobavit?', '')}`;    
+//     i++;
+//     if (i == 1) {
+//         aboutMe.removeEventListener('mouseenter', deleteElement);
+//     }
+// };
+
+// aboutMe.addEventListener('mouseenter', deleteElement);
+
 let aboutMe = document.querySelector('.section-title');
-
 aboutMe.addEventListener('mouseenter', function () {
-    if (this.innerHTML === 'About Me') {
-        this.innerHTML = 'Read please';
+    if (this.textContent === 'About Me') {
+        this.textContent = 'Read please';
     }
-    else if (this.innerHTML === 'Read please') {
-        this.innerHTML = 'About Me';
+    else if (this.textContent === 'Read please') {
+        this.textContent = 'About Me';
     }
 });
 
-let fotos = document.querySelector('.myPhotos');
+// let fotos = document.querySelector('.myPhotos');
 
-fotos.addEventListener('mouseenter', function () {
-    if (this.innerHTML === 'My photos') {
-        this.innerHTML = 'Enjoy';
-    }
-    else if (this.innerHTML === 'Enjoy') {
-        this.innerHTML = 'My photos';
-    }
-});
+// fotos.addEventListener('mouseenter', function () {
+//     if (this.textContent === 'My photos') {
+//         this.textContent = 'Enjoy';
+//     }
+//     else if (this.textContent === 'Enjoy') {
+//         this.textContent = 'My photos';
+//     }
+// });
 
 let skills = document.querySelector('.skills-title');
 
 skills.addEventListener('mouseenter', function () {
-    if (this.innerHTML === 'My skills') {
-        this.innerHTML = "That's not all";
+    if (this.textContent === 'My skills') {
+        this.textContent = "That's not all";
     }
-    else if (this.innerHTML === "That's not all") {
-        this.innerHTML = 'My skills';
+    else if (this.textContent === "That's not all") {
+        this.textContent = 'My skills';
     }
 });
 
 let services = document.querySelector('.services-title');
 
 services.addEventListener('mouseenter', function () {
-    if (this.innerHTML === 'My Services') {
-        this.innerHTML = "That's not all";
+    if (this.textContent === 'My Services') {
+        this.textContent = "That's not all";
     }
-    else if (this.innerHTML === "That's not all") {
-        this.innerHTML = 'My Services';
+    else if (this.textContent === "That's not all") {
+        this.textContent = 'My Services';
     }
 });
 
 let work = document.querySelector('.work-title');
 
 work.addEventListener('mouseenter', function () {
-    if (this.innerHTML === 'My Work') {
-        this.innerHTML = "That's not all";
+    if (this.textContent === 'My Work') {
+        this.textContent = "That's not all";
     }
-    else if (this.innerHTML === "That's not all") {
-        this.innerHTML = 'My Work';
+    else if (this.textContent === "That's not all") {
+        this.textContent = 'My Work';
     }
 });
 
 let contact = document.querySelector('.contact-title');
 
 contact.addEventListener('mouseenter', function () {
-    if (this.innerHTML === 'Contact Me') {
-        this.innerHTML = "I'm waiting";
+    if (this.textContent === 'Contact Me') {
+        this.textContent = "I'm waiting";
     }
-    else if (this.innerHTML === "I'm waiting") {
-        this.innerHTML = 'Contact Me';
+    else if (this.textContent === "I'm waiting") {
+        this.textContent = 'Contact Me';
     }
 });
 
