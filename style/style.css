@@ -1081,19 +1081,28 @@ canvas {
 
     .about__column-select {
         position: absolute;
-        top: -20px;
-        left: 350px;
+        bottom: 0px;
+        left: 0px;
         max-width: 35%;
         width: 100%;
-        padding: 0;
+        height: 17%;
     }
 
     .about__column-select_namePhoto {
-        font-size: 14px;
+        font-size: 12px;
+        line-height: 12px;
+        margin-top: 2px;
+        margin-bottom: 2px;
     }
 
     .about__column-select_text {
-        font-size: 16px;
+        font-size: 12px;
+        padding: 0;
+        margin-top: 0;
+    }
+
+    .about__column-img_card-img {
+        margin-bottom: 150px;
     }
 }
 
@@ -1252,10 +1261,7 @@ canvas {
         box-shadow: 0 5px 25px rgba(1 1 1 /15%);
         border-radius: 10px;
     }
-
 }
-
-
 
 @media (max-width: 320px) {
     .main__content-h2 span {
