@@ -20,7 +20,8 @@ window.addEventListener('DOMContentLoaded', () => {
     hideTabsImgContent();
     showTabsImgContent();
 
-    tabsNameParent.addEventListener('click', (e) => {
+    tabsNameParent.addEventListener('touchenter', (e) => {
+        e.preventDefault();
         const target = e.target;
 
         if (target && e.target.classList.contains('about__column-select_namePhoto')) {
