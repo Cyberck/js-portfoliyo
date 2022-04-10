@@ -367,6 +367,8 @@ canvas {
 
 .about__column-left {
     display: flex;
+    flex-direction: column;
+    align-items: center;
     position: relative;
     width: 45%;
 }
@@ -383,11 +385,11 @@ canvas {
 }
 
 .about__column-select_text {
-    color: crimson;
+    color: #fff;
     font-size: 17px;
     font-weight: 600;
     display: inline-block;
-    padding: 10px 20px;
+    padding: 2px 5px;
     text-transform: uppercase;
     letter-spacing: 1px;
     border-radius: 2px;
@@ -401,7 +403,7 @@ canvas {
     font-size: 18px;
     line-height: 20px;
     font-weight: 400;
-    color: crimson;
+    color: #fff;
     margin-top: 3px;
     margin-bottom: 3px;
     transition: all 500ms ease;
@@ -409,8 +411,7 @@ canvas {
 
 .about__column-select_namePhoto:hover {
     transform: translate(5px);
-    color: #0072ff;
-    font-size: 20px;
+    color: #24ebf9;
 }
 
 .about__column-img_card {
@@ -436,13 +437,27 @@ canvas {
     margin-bottom: 20px;
 }
 
+.about__column-select {
+    padding: 10px;
+    background-color: rgb(220, 20, 60, 0.4);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: left;
+    max-width: 40%;
+    width: 100%;
+    border-radius: 6px;
+    position: absolute;
+    top: 25px;
+    left: 450px;
+}
+
 .paragraph-text {
     font-size: 18px;
     line-height: 20px;
     font-weight: 400;
     color: #000000;
 }
-
 
 
 .skills {
@@ -805,6 +820,8 @@ canvas {
     margin-top: 10px;
 }
 
+/* **************media************ */
+
 @media (max-width: 1040px) {
 
     header .navigation a {
@@ -871,11 +888,6 @@ canvas {
         flex-direction: column;
         box-shadow: 0 5px 25px rgba(1 1 1 /15%);
         transition: .3s ease;
-    }
-
-    .about .content .img-card img {
-        position: relative;
-        width: 100%;
     }
 
     .menu-btn {
@@ -954,7 +966,6 @@ canvas {
     header .navigation a:hover {
         background: crimson;
         color: #fff;
-
     }
 
     section {
@@ -976,17 +987,41 @@ canvas {
         font-size: 36px;
     }
 
-    .about .content {
+    .about__column {
         flex-direction: column;
     }
 
-    .about .content .column {
+    .about__column-img_card-img {
         position: relative;
         width: 100%;
     }
 
-    .about .content .col-right {
+    .about__column-left {
+        position: relative;
+        width: 100%;
+    }
+
+    .about__column-right {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        width: 100%;
         margin-top: 40px;
+    }
+
+    .about__column-select {
+        padding: 10px;
+        background-color: rgb(220, 20, 60, 0.4);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: left;
+        max-width: 30%;
+        width: 100%;
+        border-radius: 6px;
+        position: absolute;
+        top: 25px;
+        left: 580px;
     }
 
     .skills .content {
@@ -1008,8 +1043,30 @@ canvas {
     }
 }
 
+@media (max-width: 992px) {
+
+    .about__column-select {
+        position: absolute;
+        top: 25px;
+        left: 550px;
+    }
+
+}
+
+@media (max-width: 768px) {
+
+    .about__column-select {
+        position: absolute;
+        top: 400px;
+        left: 250px;
+        max-width: 45%;
+        width: 100%;
+    }
+
+}
+
 @media (max-width: 576px) {
-    .about .content .img-card {
+    .about__column-img_card {
         position: relative;
         width: 100%;
         min-height: 300px;
@@ -1020,6 +1077,23 @@ canvas {
         padding-right: 15px;
         padding-left: 15px;
         padding-bottom: 100px;
+    }
+
+    .about__column-select {
+        position: absolute;
+        top: -20px;
+        left: 350px;
+        max-width: 35%;
+        width: 100%;
+        padding: 0;
+    }
+
+    .about__column-select_namePhoto {
+        font-size: 14px;
+    }
+
+    .about__column-select_text {
+        font-size: 16px;
     }
 }
 
@@ -1122,7 +1196,7 @@ canvas {
 
 
 @media (max-width: 360px) {
-    .about .content-title {
+    .about__column-title {
         font-size: 36px;
         font-weight: 800;
         margin-bottom: 20px;
@@ -1201,10 +1275,30 @@ canvas {
         font-size: 25px;
     }
 
-    .about .content .img-card {
+    .about__column-img_card {
         position: relative;
         width: 100%;
         min-height: 300px;
+    }
+
+    .about__column-select {
+        position: absolute;
+        top: 200px;
+        left: 90px;
+        max-width: 40%;
+        width: 100%;
+        padding: 0;
+    }
+
+    .about__column-select_text {
+        font-size: 10px;
+    }
+
+    .about__column-select_namePhoto {
+        font-size: 10px;
+        margin-top: 1px;
+        margin-bottom: 1px;
+        line-height: 12px;
     }
 
     .contact .row .card {
