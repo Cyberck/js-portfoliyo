@@ -418,6 +418,7 @@ canvas {
     /* transform: translate(5px); */
     background-color: #fff;
     color: #000;
+    transform: translate(0, 1px);
 }
 
 .about__column-img_card {
