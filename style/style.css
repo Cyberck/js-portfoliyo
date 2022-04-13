@@ -1128,7 +1128,7 @@ button:hover {
         line-height: 12px;
         margin-top: 2px;
         margin-bottom: 2px;
-        color: #000;
+        color: #fff;
     }
 
     .about__column-select_text {
@@ -1358,7 +1358,7 @@ button:hover {
         margin-top: 1px;
         margin-bottom: 1px;
         line-height: 12px;
-        color: #000;
+        color: #fff;
     }
 
     .contact .row .card {
