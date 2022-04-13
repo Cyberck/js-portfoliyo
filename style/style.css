@@ -400,30 +400,19 @@ canvas {
     z-index: 333;
 }
 
-button {
-    /* outline: none; */
-    position: relative;
-    display: inline-block;
-    cursor: pointer;
-    border: 0;
-    vertical-align: middle;
-    /* box-shadow: 10px, 10px, 10px, 10px, rgb(91, 68, 222); */
-}
-
 .about__column-select_namePhoto {
     font-size: 18px;
     line-height: 20px;
     font-weight: 400;
     color: #fff;
     margin-top: 3px;
+    border: none;
     margin-bottom: 3px;
     transition: all 800ms ease;
     padding: 5px;
     background-color: crimson;
-    border-radius: 2px;
+    border-radius: 4px;
 }
-
-
 
 .about__column-select_namePhoto:hover {    
     /* transform: translate(5px); */
