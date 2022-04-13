@@ -400,17 +400,21 @@ canvas {
     z-index: 333;
 }
 
+button:hover {
+    box-shadow: 0px 3px 10px 10px rgb(255, 255, 255, 0.3);
+}
+
 .about__column-select_namePhoto {
     font-size: 18px;
     line-height: 20px;
     font-weight: 400;
-    color: #fff;
+    color: rgb(255, 255, 255);
     margin-top: 3px;
     border: none;
     margin-bottom: 3px;
     transition: all 800ms ease;
     padding: 5px;
-    background-color: crimson;
+    background-color: rgb(220, 20, 60);
     border-radius: 4px;
 }
 
