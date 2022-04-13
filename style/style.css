@@ -380,12 +380,13 @@ canvas {
     width: 45%;
 }
 
-.about__column-select {
-    margin-top: 20px;
+.about__column-select_tabs {
+    display: flex;
+    flex-direction: column;
 }
 
 .about__column-select_text {
-    color: #fff;
+    color: #000;
     font-size: 17px;
     font-weight: 600;
     display: inline-block;
@@ -399,6 +400,16 @@ canvas {
     z-index: 333;
 }
 
+button {
+    /* outline: none; */
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    border: 0;
+    vertical-align: middle;
+    /* box-shadow: 10px, 10px, 10px, 10px, rgb(91, 68, 222); */
+}
+
 .about__column-select_namePhoto {
     font-size: 18px;
     line-height: 20px;
@@ -406,12 +417,18 @@ canvas {
     color: #fff;
     margin-top: 3px;
     margin-bottom: 3px;
-    transition: all 500ms ease;
+    transition: all 800ms ease;
+    padding: 5px;
+    background-color: crimson;
+    border-radius: 2px;
 }
 
-.about__column-select_namePhoto:hover {
-    transform: translate(5px);
-    color: #24ebf9;
+
+
+.about__column-select_namePhoto:hover {    
+    /* transform: translate(5px); */
+    background-color: #fff;
+    color: #000;
 }
 
 .about__column-img_card {
@@ -1010,7 +1027,7 @@ canvas {
 
     .about__column-select {
         padding: 10px;
-        background-color: rgb(220, 20, 60, 0.4);
+        background-color: rgba(65, 39, 45, 0.4);
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -1117,6 +1134,7 @@ canvas {
         line-height: 12px;
         margin-top: 2px;
         margin-bottom: 2px;
+        color: #000;
     }
 
     .about__column-select_text {
@@ -1346,6 +1364,7 @@ canvas {
         margin-top: 1px;
         margin-bottom: 1px;
         line-height: 12px;
+        color: #000;
     }
 
     .contact .row .card {
