@@ -418,7 +418,7 @@ button:hover {
     border-radius: 4px;
 }
 
-.about__column-select_namePhoto:hover {    
+.about__column-select_namePhoto:hover {
     /* transform: translate(5px); */
     background-color: #fff;
     color: #000;
@@ -536,8 +536,9 @@ button:hover {
     border-radius: 2px;
 }
 
-.skills .line::before {
+.skills .line::before {    
     content: '';
+    display: block;
     position: absolute;
     height: 100%;
     top: 0;
@@ -546,26 +547,36 @@ button:hover {
 }
 
 .skills .html::before {
+    content: '';
+    display: block;
     width: 85%;
     background: #E45126;
 }
 
 .skills .css::before {
+    content: '';
+    display: block;
     width: 75%;
     background: #0c73b8;
 }
 
 .skills .javascript::before {
-    width: 25%;
+    content: '';
+    display: block;
+    width: 30%;
     background: #e3a324;
 }
 
 .skills .vuejs::before {
+    content: '';
+    display: block;
     width: 25%;
     background: #30dd6d;
 }
 
 .skills .php::before {
+    content: '';
+    display: block;
     width: 10%;
     background: #6d7eb8;
 }
@@ -1077,6 +1088,7 @@ button:hover {
         width: 100%;
     }
 }
+
 @media (max-width: 670px) {
     .about__column-select {
         margin-top: -140px;
@@ -1093,6 +1105,7 @@ button:hover {
         width: 100%;
     }
 }
+
 @media (max-width: 600px) {
 
     .about__column-select {
