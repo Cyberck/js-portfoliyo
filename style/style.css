@@ -66,8 +66,8 @@ header {
 
 header.sticky {
     background: crimson;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding-top: 12px;
+    padding-bottom: 12px;
     padding-left: 100px;
     padding-right: 100px;
 }
@@ -413,9 +413,10 @@ button:hover {
     border: none;
     margin-bottom: 3px;
     transition: all 800ms ease;
-    padding: 5px;
+    padding: 10px;
     background-color: rgb(220, 20, 60);
     border-radius: 4px;
+    cursor: pointer;
 }
 
 .about__column-select_namePhoto:hover {
@@ -464,7 +465,7 @@ button:hover {
 
 .paragraph-text {
     font-size: 18px;
-    line-height: 20px;
+    line-height: 24px;
     font-weight: 400;
     color: #000000;
 }
@@ -536,7 +537,7 @@ button:hover {
     border-radius: 2px;
 }
 
-.skills .line::before {    
+.skills .line::before {
     content: '';
     display: block;
     position: absolute;
@@ -843,6 +844,20 @@ button:hover {
 
 /* **************media************ */
 
+@media (max-width: 1250px) {
+    .item__link {
+        font-size: 20px;
+        padding: 0 10px;
+    }
+}
+
+@media (max-width: 1050px) {
+    .item__link {
+        font-size: 18px;
+        padding: 0 10px;
+    }
+}
+
 @media (max-width: 1040px) {
 
     header .navigation a {
@@ -880,13 +895,13 @@ button:hover {
     header {
         padding-top: 12px;
         padding-bottom: 12px;
-        padding-left: 20px;
-        padding-right: 20px;
+        padding-left: 10px;
+        padding-right: 18px;
     }
 
     header.sticky {
-        padding-top: 10px;
-        padding-left: 30px;
+        padding-top: 12px;
+        padding-left: 12px;
         padding-bottom: 10px;
         padding-right: 18px;
     }
@@ -917,9 +932,7 @@ button:hover {
         height: 50px;
         border-radius: 50%;
         position: relative;
-    }
-
-    .menu-btn {
+        /* position: absolute;         */
         filter: invert(1);
         z-index: 999;
     }
