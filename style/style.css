@@ -816,8 +816,8 @@ button:hover {
 }
 
 .contact-form .input-box .send-btn:hover {
-    background: #fff;
-    color: #000;
+    background: rgb(172, 122, 133);
+    color: rgb(252, 250, 250);
 }
 
 /*********** footer *************/
