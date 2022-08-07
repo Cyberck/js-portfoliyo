@@ -77,24 +77,24 @@ window.addEventListener('DOMContentLoaded', function () {
 
 
     let dushaev = document.querySelector('.brand'),
-        inputClass = document.querySelector('.input-class'),
+        // inputClass = document.querySelector('.input-class'),
         contactMessage = document.querySelector('.contact-message');
 
     dushaev.addEventListener('mouseenter', function () {
-        if (this.innerHTML === 'Dushayev') {
-            this.innerHTML = 'Bakhtiyor';
+        if (this.textContent === 'Dushayev') {
+            this.textContent = 'Bakhtiyor';
         }
-        else if (this.innerHTML === 'Bakhtiyor') {
-            this.innerHTML = 'Dushayev';
+        else if (this.textContent === 'Bakhtiyor') {
+            this.textContent = 'Dushayev';
         }
         else {
-            (this.innerHTML = 'Dushayev');
+            (this.textContent = 'Dushayev');
         }
     });
 
-    inputClass.addEventListener('input', function () {
-        contactMessage.value = `My name is ${inputClass.value} and i want:`;
-    });
+    // inputClass.addEventListener('input', function () {
+    //     contactMessage.value = `My name is ${inputClass.value} and i want:`;
+    // });
 
     /* ************************************************ */
 
