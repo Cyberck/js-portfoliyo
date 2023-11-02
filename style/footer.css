@@ -1,0 +1,23 @@
+@import url(../style/fonts.css);
+
+/*********** footer *************/
+
+.footer {
+	background: #000016;
+	color: #fff;
+	text-align: left;
+	padding-top: 34px;
+	padding-bottom: 34px;
+	padding-left: 34px;
+	padding-right: 34px;
+}
+
+.footer .footer-title {
+	font-size: 20px;
+	font-weight: 600;
+}
+
+.footer p {
+	font-size: 16px;
+	margin-top: 10px;
+}

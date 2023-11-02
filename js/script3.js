@@ -1,9 +1,8 @@
-'use strict';
 
 window.addEventListener('DOMContentLoaded', () => {
-    const tabs = document.querySelectorAll('.about__column-select_namePhoto'),
-        tabsImgContent = document.querySelectorAll('.about__column-img_card'),
-        tabsNameParent = document.querySelector('.about__column-select_tabs');
+    const tabs = document.querySelectorAll('.about__select-namePhoto'),
+        tabsImgContent = document.querySelectorAll('.about__column-img'),
+        tabsNameParent = document.querySelector('.about__select-tabs');
 
 
     function hideTabsImgContent() {
@@ -24,7 +23,7 @@ window.addEventListener('DOMContentLoaded', () => {
         e.preventDefault();
         const target = e.target;
 
-        if (target && e.target.classList.contains('about__column-select_namePhoto')) {
+        if (target && e.target.classList.contains('about__select-namePhoto')) {
             tabs.forEach((item, i) => {
                 if (target == item) {
                     hideTabsImgContent();

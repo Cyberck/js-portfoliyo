@@ -1,4 +1,3 @@
-'use strict';
 
 window.addEventListener('DOMContentLoaded', () => {
     (function () {
@@ -17,7 +16,7 @@ window.addEventListener('DOMContentLoaded', () => {
                 lineLength: 150,
                 particleLife: 6
             };
-        document.querySelector('.main').appendChild(canvas);
+        document.querySelector('.header').appendChild(canvas);
 
         window.onresize = function () {
             w = canvas.width = innerWidth,

@@ -1,0 +1,68 @@
+@import url(../style/fonts.css);
+
+/*  */
+
+.services {
+	padding-top: 100px;
+	padding-bottom: 100px;
+	padding-left: 100px;
+	padding-right: 100px;
+}
+
+.services .content {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	flex-direction: row;
+	margin-top: 20px;
+}
+
+.title p {
+	width: 80%;
+
+}
+
+.services .content .card {
+	background: #fff;
+	width: 300px;
+	margin: 10px;
+	padding: 25px;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	box-shadow: 0 5px 25px rgba(1 1 1 /15%);
+	border-radius: 10px;
+}
+
+.services .card .services-icon {
+	color: crimson;
+	font-size: 120px;
+	text-align: center;
+	transition: transform .5s ease;
+}
+
+.services .card .services-icon:hover {
+	transform: translateY(-10px);
+}
+
+.services .card .info {
+	text-align: center;
+}
+
+.services .card .info h3 {
+	color: crimson;
+	font-size: 20px;
+	font-weight: 700;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
+.services__content-text {
+	font-size: 18px;
+	line-height: 20px;
+	font-weight: 400;
+	color: #000000;
+	text-align: left;
+}
