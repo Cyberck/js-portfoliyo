@@ -113,9 +113,9 @@ window.addEventListener('DOMContentLoaded', function () {
 
 	skills.addEventListener('mouseenter', function () {
 		if (this.textContent === 'My skills') {
-			this.textContent = "That's not all";
+			this.textContent = 'That\'s not all';
 		}
-		else if (this.textContent === "That's not all") {
+		else if (this.textContent === 'That\'s not all') {
 			this.textContent = 'My skills';
 		}
 	});
@@ -124,9 +124,9 @@ window.addEventListener('DOMContentLoaded', function () {
 
 	services.addEventListener('mouseenter', function () {
 		if (this.textContent === 'My Services') {
-			this.textContent = "That's not all";
+			this.textContent = 'That\'s not all';
 		}
-		else if (this.textContent === "That's not all") {
+		else if (this.textContent === 'That\'s not all') {
 			this.textContent = 'My Services';
 		}
 	});
@@ -135,9 +135,9 @@ window.addEventListener('DOMContentLoaded', function () {
 
 	work.addEventListener('mouseenter', function () {
 		if (this.textContent === 'My Work') {
-			this.textContent = "That's not all";
+			this.textContent = 'That\'s not all';
 		}
-		else if (this.textContent === "That's not all") {
+		else if (this.textContent === 'That\'s not all') {
 			this.textContent = 'My Work';
 		}
 	});
@@ -146,9 +146,9 @@ window.addEventListener('DOMContentLoaded', function () {
 
 	contact.addEventListener('mouseenter', function () {
 		if (this.textContent === 'Contact Me') {
-			this.textContent = "I'm waiting";
+			this.textContent = 'I\'m waiting';
 		}
-		else if (this.textContent === "I'm waiting") {
+		else if (this.textContent === 'I\'m waiting') {
 			this.textContent = 'Contact Me';
 		}
 	});
