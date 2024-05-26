@@ -86,7 +86,7 @@
 .skills .html::before {
   content: '';
   display: block;
-  width: 95%;
+  width: 99%;
   background: #E45126;
 }
 
@@ -100,21 +100,29 @@
 .skills .javascript::before {
   content: '';
   display: block;
-  width: 75%;
+  width: 80%;
   background: #e3a324;
 }
 
 .skills .vuejs::before {
   content: '';
   display: block;
+  width: 80%;
+  background: #30dd6d;
+}
+
+.skills .reactjs::before {
+  content: '';
+  display: block;
   width: 50%;
   background: #30dd6d;
 }
 
+
 .skills .php::before {
   content: '';
   display: block;
-  width: 50%;
+  width: 80%;
   background: #6d7eb8;
 }
 
